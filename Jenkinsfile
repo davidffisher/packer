@@ -43,14 +43,3 @@ node("worker1"){
             ]
     }
 }
-                '''
-            }
-
-            stage("Build"){
-                sh '''
-                    packer build apache.json
-                '''
-            }
-        }
-    }
-}
